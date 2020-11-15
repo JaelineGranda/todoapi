@@ -7,8 +7,8 @@ Introduction: This project was created to learn about Nodejs and REST API. I hav
 Technologies:
 JavaScript
 Nodejs
-MongoDB
 Express REST API
+MongoDB
 
 Status: Project is complete as of 11/16/2020
 
