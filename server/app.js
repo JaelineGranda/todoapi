@@ -12,12 +12,11 @@ mongoose.connect('mongodb://localhost:27017/todoDb', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
-mongoose.Promise = global.Promise;
+mongoose.Promise = global.Promise; // creates global promise for mongoose schema
 
 const app = express();
 
-
-app.use(cors());
+app.use(cors()); // Gives access to local server to be used on todoapp UI
 app.options('*', cors());
 app.use(logger('dev'));
 app.use(express.json());
